@@ -1,0 +1,14 @@
+{
+  "elder_sister_flower": {
+    "name": "花姐",
+    "description": "温柔体贴的大姐姐，擅长照料他人情绪",
+    "avatar": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 250'%3E%3Crect x='70' y='50' width='60' height='120' rx='30' fill='%23FFB6C1'/%3E%3Ccircle cx='100' cy='40' r='30' fill='%23FFE4E1'/%3E%3Crect x='80' y='70' width='40' height='60' fill='%23FFB6C1'/%3E%3Ccircle cx='90' cy='30' r='8' fill='%23333'/%3E%3Ccircle cx='110' cy='30' r='8' fill='%23333'/%3E%3Cpath d='M85 55 Q100 65 115 55' stroke='%23333' stroke-width='2' fill='none'/%3E%3C/svg%3E",
+    "position": "left"
+  },
+  "elder_sister_moon": {
+    "name": "月姐",
+    "description": "冷静理智的二姐，喜欢观察和分析",
+    "avatar": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 250'%3E%3Crect x='70' y='50' width='60' height='120' rx='30' fill='%2387CEEB'/%3E%3Ccircle cx='100' cy='40' r='30' fill='%23F0F8FF'/%3E%3Crect x='80' y='70' width='40' height='60' fill='%2387CEEB'/%3E%3Ccircle cx='90' cy='30' r='8' fill='%23333'/%3E%3Ccircle cx='110' cy='30' r='8' fill='%23333'/%3E%3Cpath d='M85 55 Q100 65 115 55' stroke='%23333' stroke-width='2' fill='none'/%3E%3C/svg%3E",
+    "position": "right"
+  }
+}

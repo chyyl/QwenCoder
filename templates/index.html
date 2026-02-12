@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>姐姐们的聚会</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="game-container">
+        <!-- 背景 -->
+        <div id="background"></div>
+
+        <!-- 人物区域 -->
+        <div id="character-area">
+            <div id="character-left" class="character-slot"></div>
+            <div id="character-center" class="character-slot"></div>
+            <div id="character-right" class="character-slot"></div>
+        </div>
+
+        <!-- 对话框 -->
+        <div id="dialogue-box">
+            <div id="speaker-name">...</div>
+            <div id="dialogue-text"> loading...</div>
+            <div id="choices-container"></div>
+            <button id="next-btn" style="display:none;">继续 ></button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
