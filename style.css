@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(135deg, #72b3f5, #c6e7ff);
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect fill="%23e6f7ff" width="800" height="600"/><circle fill="%23ffffff" cx="100" cy="80" r="30"/><circle fill="%23ffffff" cx="700" cy="120" r="40"/><circle fill="%23ffffff" cx="300" cy="50" r="25"/></svg>');
+    background-size: cover;
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#character-area {
+    position: absolute;
+    bottom: 200px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 2;
+}
+
+#character {
+    width: 200px;
+    height: 250px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 250"><rect x="70" y="50" width="60" height="120" rx="30" fill="%23d1b3ff"/><circle cx="100" cy="40" r="30" fill="%23ffccdd"/><rect x="80" y="70" width="40" height="60" fill="%23d1b3ff"/><circle cx="90" cy="30" r="8" fill="%23333"/><circle cx="110" cy="30" r="8" fill="%23333"/><path d="M85 55 Q100 65 115 55" stroke="%23333" stroke-width="2" fill="none"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: transform 0.3s ease;
+}
+
+#character:hover {
+    transform: scale(1.05);
+}
+
+#dialogue-box {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    border: 2px solid #d1b3ff;
+}
+
+#speaker-name {
+    font-weight: bold;
+    color: #72b3f5;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+#dialogue-text {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #333;
+    min-height: 60px;
+}
+
+#next-btn {
+    background: linear-gradient(to right, #72b3f5, #d1b3ff);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    float: right;
+    transition: transform 0.2s ease;
+}
+
+#next-btn:hover {
+    transform: scale(1.05);
+}
+
+#choice-box {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    z-index: 4;
+    border: 2px solid #d1b3ff;
+    text-align: center;
+}
+
+.choice-btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    background: linear-gradient(to right, #d1b3ff, #72b3f5);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: transform 0.2s ease;
+}
+
+.choice-btn:hover {
+    transform: scale(1.05);
+}

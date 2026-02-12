@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仙缘奇遇</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- 背景 -->
+        <div id="background"></div>
+        
+        <!-- 人物区域 -->
+        <div id="character-area">
+            <div id="character"></div>
+        </div>
+        
+        <!-- 对话框 -->
+        <div id="dialogue-box">
+            <div id="speaker-name">神秘仙人</div>
+            <div id="dialogue-text">欢迎来到仙境，有缘人...</div>
+            <button id="next-btn">继续 ></button>
+        </div>
+        
+        <!-- 选择框（暂时隐藏） -->
+        <div id="choice-box" style="display: none;">
+            <button class="choice-btn" data-choice="1">选择一</button>
+            <button class="choice-btn" data-choice="2">选择二</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
