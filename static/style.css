@@ -15,8 +15,6 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect fill="%23e6f7ff" width="800" height="600"/><circle fill="%23ffffff" cx="100" cy="80" r="30"/><circle fill="%23ffffff" cx="700" cy="120" r="40"/><circle fill="%23ffffff" cx="300" cy="50" r="25"/></svg>');
-    background-size: cover;
 }
 
 #background {
@@ -26,6 +24,9 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease;
 }
 
 #character-area {
@@ -34,23 +35,42 @@ body {
     width: 100%;
     height: 300px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-end;
     z-index: 2;
+    padding: 0 50px;
+    box-sizing: border-box;
 }
 
-#character {
+.character-slot {
     width: 200px;
     height: 250px;
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 250"><rect x="70" y="50" width="60" height="120" rx="30" fill="%23d1b3ff"/><circle cx="100" cy="40" r="30" fill="%23ffccdd"/><rect x="80" y="70" width="40" height="60" fill="%23d1b3ff"/><circle cx="90" cy="30" r="8" fill="%23333"/><circle cx="110" cy="30" r="8" fill="%23333"/><path d="M85 55 Q100 65 115 55" stroke="%23333" stroke-width="2" fill="none"/></svg>');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center bottom;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     transition: transform 0.3s ease;
 }
 
-#character:hover {
+.character-slot img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.character-slot:hover {
     transform: scale(1.05);
+}
+
+#character-left {
+    justify-content: flex-start;
+}
+
+#character-right {
+    justify-content: flex-end;
+}
+
+#character-center {
+    justify-content: center;
 }
 
 #dialogue-box {
@@ -98,20 +118,8 @@ body {
     transform: scale(1.05);
 }
 
-#choice-box {
-    position: absolute;
-    bottom: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    max-width: 400px;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    z-index: 4;
-    border: 2px solid #d1b3ff;
-    text-align: center;
+#choices-container {
+    margin-top: 15px;
 }
 
 .choice-btn {

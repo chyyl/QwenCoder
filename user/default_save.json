@@ -1,0 +1,15 @@
+{
+  "user_id": "default_player",
+  "username": "访客",
+  "last_played_story": "sister_party",
+  "progress": {
+    "sister_party": {
+      "current_chapter": 1,
+      "current_scene": 1,
+      "visited_scenes": [1],
+      "choices_made": []
+    }
+  },
+  "achievements": [],
+  "inventory": []
+}

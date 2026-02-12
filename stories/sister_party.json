@@ -1,0 +1,244 @@
+{
+  "story_id": "sister_party",
+  "title": "姐姐们的聚会",
+  "chapters": [
+    {
+      "chapter_id": 1,
+      "title": "初到聚会",
+      "scenes": [
+        {
+          "scene_id": 1,
+          "background": "garden_pavilion",
+          "characters": ["elder_sister_flower"],
+          "dialogue": [
+            {
+              "speaker": "elder_sister_flower",
+              "text": "欢迎来到我们的小聚！今天能见到你真是太好了。",
+              "action": "show_character_left"
+            },
+            {
+              "speaker": "player",
+              "text": "花姐，这里好美啊！月姐还没来吗？",
+              "action": "show_character_left"
+            },
+            {
+              "speaker": "elder_sister_flower",
+              "text": "她稍后就到，说是要带一样特别的东西来。来，先坐下喝杯茶吧。",
+              "action": "show_character_left"
+            }
+          ],
+          "choices": [
+            {
+              "text": "询问月姐要带什么",
+              "next_scene": 2
+            },
+            {
+              "text": "安静地等待月姐到来",
+              "next_scene": 3
+            }
+          ]
+        },
+        {
+          "scene_id": 2,
+          "background": "garden_pavilion",
+          "characters": ["elder_sister_flower"],
+          "dialogue": [
+            {
+              "speaker": "elder_sister_flower",
+              "text": "这我可不能剧透太多，不过我可以告诉你，那是一件关于记忆的礼物。",
+              "action": "show_character_left"
+            },
+            {
+              "speaker": "player",
+              "text": "记忆的礼物？听起来很神奇呢。",
+              "action": "show_character_left"
+            },
+            {
+              "speaker": "elder_sister_flower",
+              "text": "是啊，月儿总是这么神秘。但她每次都会带来惊喜。",
+              "action": "show_character_left"
+            }
+          ],
+          "choices": [
+            {
+              "text": "继续等待月姐",
+              "next_scene": 3
+            }
+          ]
+        },
+        {
+          "scene_id": 3,
+          "background": "garden_pavilion",
+          "characters": ["elder_sister_moon"],
+          "dialogue": [
+            {
+              "speaker": "elder_sister_moon",
+              "text": "抱歉让大家久等了，我来了。看，这就是我要带来的东西。",
+              "action": "show_character_right"
+            },
+            {
+              "speaker": "player",
+              "text": "哇，是一个精致的盒子！里面装的是什么？",
+              "action": "show_character_left"
+            },
+            {
+              "speaker": "elder_sister_moon",
+              "text": "这是记录我们美好回忆的时光宝盒，打开它就能重温那些珍贵时刻。",
+              "action": "show_character_right"
+            }
+          ],
+          "choices": [
+            {
+              "text": "请求打开宝盒看看",
+              "next_scene": 4
+            },
+            {
+              "text": "先听听宝盒的故事",
+              "next_scene": 5
+            }
+          ]
+        },
+        {
+          "scene_id": 4,
+          "background": "garden_pavilion",
+          "characters": ["elder_sister_flower", "elder_sister_moon"],
+          "dialogue": [
+            {
+              "speaker": "elder_sister_moon",
+              "text": "那么，让我们一起打开它吧。准备好回到过去了吗？",
+              "action": "show_character_right"
+            },
+            {
+              "speaker": "elder_sister_flower",
+              "text": "记得第一次聚会时，我们还很害羞呢。",
+              "action": "show_character_left"
+            },
+            {
+              "speaker": "player",
+              "text": "我已经迫不及待想看了！",
+              "action": "show_character_left"
+            }
+          ],
+          "choices": [
+            {
+              "text": "共同开启回忆之旅",
+              "next_scene": 6
+            }
+          ]
+        },
+        {
+          "scene_id": 5,
+          "background": "garden_pavilion",
+          "characters": ["elder_sister_flower", "elder_sister_moon"],
+          "dialogue": [
+            {
+              "speaker": "elder_sister_moon",
+              "text": "这个宝盒是我用特殊法术制作的，能够保存最真挚的情感和记忆。",
+              "action": "show_character_right"
+            },
+            {
+              "speaker": "elder_sister_flower",
+              "text": "是啊，每次打开它都能感受到当时的温暖。",
+              "action": "show_character_left"
+            },
+            {
+              "speaker": "player",
+              "text": "真是太神奇了，月姐你真厉害！",
+              "action": "show_character_left"
+            }
+          ],
+          "choices": [
+            {
+              "text": "现在就打开宝盒吧",
+              "next_scene": 4
+            }
+          ]
+        },
+        {
+          "scene_id": 6,
+          "background": "garden_pavilion",
+          "characters": ["elder_sister_flower", "elder_sister_moon"],
+          "dialogue": [
+            {
+              "speaker": "elder_sister_moon",
+              "text": "时光宝盒开启了！大家准备好了吗？",
+              "action": "show_character_right"
+            },
+            {
+              "speaker": "elder_sister_flower",
+              "text": "让我们一起回到那些美好的日子。",
+              "action": "show_character_left"
+            },
+            {
+              "speaker": "player",
+              "text": "感受到了！那些快乐的记忆...",
+              "action": "show_character_left"
+            }
+          ],
+          "choices": [
+            {
+              "text": "结束回忆，回到现在",
+              "next_scene": 7
+            }
+          ]
+        },
+        {
+          "scene_id": 7,
+          "background": "garden_pavilion",
+          "characters": ["elder_sister_flower", "elder_sister_moon"],
+          "dialogue": [
+            {
+              "speaker": "elder_sister_flower",
+              "text": "这次聚会真是难忘，希望以后还能常常见面。",
+              "action": "show_character_left"
+            },
+            {
+              "speaker": "elder_sister_moon",
+              "text": "只要我们的心在一起，距离不是问题。",
+              "action": "show_character_right"
+            },
+            {
+              "speaker": "player",
+              "text": "谢谢两位姐姐，今天真的很开心！",
+              "action": "show_character_left"
+            }
+          ],
+          "choices": [
+            {
+              "text": "约定下次再聚",
+              "next_scene": 8
+            }
+          ]
+        },
+        {
+          "scene_id": 8,
+          "background": "garden_pavilion",
+          "characters": ["elder_sister_flower", "elder_sister_moon"],
+          "dialogue": [
+            {
+              "speaker": "elder_sister_flower",
+              "text": "那就这么决定了，下个月同一时间，我们再聚！",
+              "action": "show_character_left"
+            },
+            {
+              "speaker": "elder_sister_moon",
+              "text": "我会准备新的故事和大家分享。",
+              "action": "show_character_right"
+            },
+            {
+              "speaker": "player",
+              "text": "期待下次相聚！",
+              "action": "show_character_left"
+            }
+          ],
+          "choices": [
+            {
+              "text": "完成聚会，返回开始",
+              "next_scene": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

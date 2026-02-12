@@ -1,72 +1,66 @@
-```json
-{
-  "backgrounds": {
-    "mountain_view.json": {
-      "name": "Mountain View",
-      "description": "A serene mountain landscape background",
-      "type": "scenic",
-      "weather": ["sunny", "cloudy"],
-      "time_of_day": ["dawn", "noon", "sunset"],
-      "resolution": "1920x1080",
-      "file_path": "assets/backgrounds/mountain_view.png"
-    }
-  },
-  "characters": {
-    "immortal_a.json": {
-      "name": "Immortal A",
-      "type": "immortal",
-      "abilities": [
-        {
-          "name": "Eternal Life",
-          "description": "Cannot die from natural causes or aging",
-          "level": 10
-        },
-        {
-          "name": "Elemental Control",
-          "description": "Can manipulate fire, water, earth, and air",
-          "level": 8
-        }
-      ],
-      "stats": {
-        "health": 1000,
-        "mana": 500,
-        "strength": 90,
-        "agility": 85,
-        "intelligence": 95
-      }
-    }
-  },
-  "stories": {
-    "story_template.json": {
-      "title": "Default Story Template",
-      "genre": "fantasy",
-      "chapters": [
-        {
-          "chapter_number": 1,
-          "title": "The Beginning",
-          "content": "In the beginning, there was...",
-          "length": 1000
-        }
-      ],
-      "characters": ["main_character", "supporting_character"],
-      "locations": ["starting_town", "mysterious_forest"]
-    }
-  },
-  "user": {
-    "user_data.json": {
-      "username": "player_one",
-      "progress": {
-        "level": 1,
-        "experience": 0,
-        "completed_stories": [],
-        "unlocked_characters": []
-      },
-      "settings": {
-        "language": "en",
-        "volume": 0.8,
-        "graphics_quality": "medium"
-      }
-    }
-  }
-}
+```
+# Compiled and build artifacts
+*.pyc
+__pycache__/
+*.o
+*.obj
+*.out
+dist/
+build/
+target/
+
+# Dependencies
+.venv/
+venv/
+node_modules/
+.mypy_cache/
+.pytest_cache/
+.coverage
+coverage/
+htmlcov/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
 ```
