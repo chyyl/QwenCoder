@@ -1,0 +1,40 @@
+{
+  "story_id": "story1",
+  "title": "仙缘奇遇",
+  "chapters": [
+    {
+      "chapter_id": 1,
+      "title": "初入仙境",
+      "scenes": [
+        {
+          "scene_id": 1,
+          "background": "mountain_view",
+          "character_left": "player",
+          "character_right": "immortal_a",
+          "dialogue": [
+            {
+              "speaker": "immortal_a",
+              "text": "欢迎来到仙境，有缘人。",
+              "action": "show_character_right"
+            },
+            {
+              "speaker": "player",
+              "text": "这里是哪里？",
+              "action": "show_character_left"
+            }
+          ],
+          "choices": [
+            {
+              "text": "询问仙境的秘密",
+              "next_scene": 2
+            },
+            {
+              "text": "请求修炼之法",
+              "next_scene": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
